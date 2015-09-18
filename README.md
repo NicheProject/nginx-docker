@@ -2,6 +2,8 @@
 
 This container exposes `/usr/share/nginx/html` as a volume. This way you can export that out to the host machine and just put files you need served on the host machine
 
+[![Circle CI](https://circleci.com/gh/parabuzzle/nginx-docker.svg?style=svg)](https://circleci.com/gh/parabuzzle/nginx-docker)
+
 <!-- MarkdownTOC depth=3 -->
 
 - [Usage](#usage)
