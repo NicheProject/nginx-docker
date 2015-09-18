@@ -26,6 +26,7 @@ end
 def next_version
   base           = version
   taginfo        = JSON.parse(HTTParty.get("https://hub.docker.com/v2/repositories/#{username}/#{container_name}/tags/").body)['results']
+  return "#{base}.0" if taginfo.nil?
   tags = []
   taginfo.each do |tag|
     tags << tag['name']
